@@ -17,6 +17,23 @@
             height: 100vh;
             color: #333333;
         }
+        .result {
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.result:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #5597e5, #79e5ff);
+}
 
         .login {
             background: linear-gradient(135deg, #ffffff, #f3f3f3);
@@ -176,7 +193,7 @@
                 <input class="btn btn-primary" type="submit" value="Predict your Maths Score" />
             </div>
         </form>
-        <h2>THE prediction is {{results}}</h2>
+        <h2 class="result">The predicted Maths Score is: {{results}}</h2>
     </div>
 </body>
 
